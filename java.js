@@ -137,7 +137,7 @@ const testimonials = [
         name: "David K.",
         role: "Port Harcourt, Nigeria",
         rating: 4,
-        image: "./images/david.jpg.",
+        image: "./images/david.jpg.jpeg",
         zoom: 1.6,
         posX: 50,
         posY: 35
