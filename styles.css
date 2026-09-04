@@ -2311,8 +2311,8 @@ body.loading {
 }
 
 .testimonial-avatar {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     overflow: hidden;
     object-fit: cover;
