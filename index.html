@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember&Spice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Josefin+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+         <link rel="icon" type="image/png" href="./images/logo1.PNG">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+   <div class="page-loader" id="page-loader">
+    <div class="loader-glow"></div>
+    <div class="loader-ring-wrap">
+        <svg class="loader-ring" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(201,168,76,0.15)" stroke-width="1.5"/>
+            <circle cx="50" cy="50" r="46" fill="none" stroke="url(#loaderGradient)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="220"/>
+            <defs>
+                <linearGradient id="loaderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f1b15d"/>
+                    <stop offset="100%" stop-color="#c8691e"/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <img src="./images/logo1.PNG" alt="" class="loader-logo">
+    </div>
+    <span class="loader-label">Igniting The Flame</span>
+</div>
+
+    <header>
+        <nav>
+            <a href="">
+                <img src="./images/logo1.PNG" alt="">
+            </a>
+            <div class="hamburger" id="hamburger">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                </svg>
+
+                <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                    </path>
+                </svg>
+            </div>
+
+            <ul id="nav-menu">
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="orders.html">Orders</a></li>
+            </ul>
+            <a href="#contact" class="reserve-btn">Book</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./images/ssvid.net--spaghetti_720x1280.MP4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                <span class="hero-label-line"></span>
+                <span class="hero-label-text">✦ Nigerian Fine Dining ✦</span>
+                <span class="hero-label-line"></span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="hero-title-line">Where Every</span>
+                <span class="hero-title-line hero-title-italic">Flame</span>
+                <span class="hero-title-line">Tells A Story.</span>
+            </h1>
+
+            <div class="hero-divider"></div>
+
+            <p class="hero-sub">
+                Crafted with fire. Seasoned with soul.<br>
+                Experience Nigerian cuisine like never before.
+            </p>
+
+            <div class="hero-btns">
+                <a href="#menu" class="hero-btn hero-btn-primary">Explore Menu</a>
+                <a href="#contact" class="hero-btn hero-btn-secondary">Book a Table</a>
+            </div>
+
+        </div>
+
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="stat-number">Est.</span>
+                <span class="stat-label">2025</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+                <span class="stat-number">Lagos</span>
+                <span class="stat-label">Nigeria</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+                <span class="stat-number">Open</span>
+                <span class="stat-label">Daily</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Nigerian</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Signature Dishes -->
+
+    <section class="menu-section" id="menu">
+
+        <div class="menu-header" data-aos="fade-up">
+            <div class="menu-label">
+                <span class="menu-label-line"></span>
+                <span class="menu-label-text">✦ Signature Dishes ✦</span>
+                <span class="menu-label-line"></span>
+            </div>
+            <h2 class="menu-title">Crafted by <em>Fire.</em><br>Remembered Forever.</h2>
+        </div>
+
+        <!-- Row 1 -->
+        <div class="menu-row">
+            <div class="menu-img" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./images/smoky-jollof.png" alt="Jollof Rice">
+                <span class="menu-tag">Chef's Pick</span>
+            </div>
+            <div class="menu-info" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                <span class="menu-cat">Nigerian Classic</span>
+                <h3 class="menu-dish">Smoky Party<br>Jollof Rice</h3>
+                <div class="menu-line"></div>
+                <p class="menu-desc">Party-style jollof slow-cooked over open flame with seasoned chicken, fried
+                    plantain and our secret spice blend.</p>
+                <div class="menu-foot">
+                    <span class="menu-price">₦4,500</span>
+                    <a href="#contact" class="menu-order">Order Now <span>→</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="menu-row menu-row-flip">
+            <div class="menu-info" data-aos="fade-right" data-aos-duration="1000">
+                <span class="menu-cat">House Favourite</span>
+                <h3 class="menu-dish">Egusi Soup &<br>Pounded Yam</h3>
+                <div class="menu-line"></div>
+                <p class="menu-desc">Rich melon seed soup slow-simmered with assorted meat, stockfish, crayfish and
+                    fresh leafy greens. A bowl of history.</p>
+                <div class="menu-foot">
+                    <span class="menu-price">₦5,800</span>
+                    <a href="#contact" class="menu-order">Order Now <span>→</span></a>
+                </div>
+            </div>
+            <div class="menu-img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                <img src="./images/egusi.png" alt="Egusi">
+                <span class="menu-tag menu-tag-gold">Most Loved</span>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="menu-row">
+            <div class="menu-img" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./images/catfish01.png" alt="Pepper Soup">
+                <span class="menu-tag menu-tag-red">Hot & Bold</span>
+            </div>
+            <div class="menu-info" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                <span class="menu-cat" style="color:#8b1a1a">Bold & Fiery</span>
+                <h3 class="menu-dish">Catfish<br>Pepper Soup</h3>
+                <div class="menu-line" style="background:linear-gradient(90deg, transparent, #8b1a1a, #c8691e)"></div>
+                <p class="menu-desc">Fresh catfish steeped in our signature pepper blend — warming, bold and deeply
+                    aromatic.</p>
+                <div class="menu-foot">
+                    <span class="menu-price">₦6,200</span>
+                    <a href="#contact" class="menu-order">Order Now <span>→</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="menu-row menu-row-flip">
+            <div class="menu-info" data-aos="fade-right" data-aos-duration="1000">
+                <span class="menu-cat">Grill Special</span>
+                <h3 class="menu-dish">Suya Platter<br>& Yaji Dip</h3>
+                <div class="menu-line"></div>
+                <p class="menu-desc">Tender beef skewers marinated in our house yaji spice, grilled over charcoal with
+                    fresh tomato and onion.</p>
+                <div class="menu-foot">
+                    <span class="menu-price">₦7,500</span>
+                    <a href="#contact" class="menu-order">Order Now <span>→</span></a>
+                </div>
+            </div>
+            <div class="menu-img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                <img src="./images/suya platter.png" alt="Suya">
+                <span class="menu-tag">Grill Master</span>
+            </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="menu-row">
+            <div class="menu-img" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./images/Oxtail Stew.png" alt="Oxtail">
+                <span class="menu-tag menu-tag-gold">Premium</span>
+            </div>
+            <div class="menu-info" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                <span class="menu-cat">Slow Cooked</span>
+                <h3 class="menu-dish">Oxtail Stew<br>& White Rice</h3>
+                <div class="menu-line"></div>
+                <p class="menu-desc">Fall-off-the-bone oxtail slow-braised for six hours in rich tomato and herb gravy.
+                    Patience on a plate.</p>
+                <div class="menu-foot">
+                    <span class="menu-price">₦9,000</span>
+                    <a href="#contact" class="menu-order">Order Now <span>→</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="menu-row menu-row-flip">
+            <div class="menu-info" data-aos="fade-right" data-aos-duration="1000">
+                <span class="menu-cat">Street Legend</span>
+                <h3 class="menu-dish">Asun &<br>Plantain Chips</h3>
+                <div class="menu-line"></div>
+                <p class="menu-desc">Smoky spiced goat meat tossed with scotch bonnet, onions and peppers. Paired with
+                    crispy ripe plantain chips.</p>
+                <div class="menu-foot">
+                    <span class="menu-price">₦5,200</span>
+                    <a href="#contact" class="menu-order">Order Now <span>→</span></a>
+                </div>
+            </div>
+            <div class="menu-img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                <img src="./images/Asun & plantain chips.png" alt="Asun">
+                <span class="menu-tag">Fan Favourite</span>
+            </div>
+        </div>
+
+        <div class="menu-strip" data-aos="fade-up">
+            <p>Every dish is made fresh — no shortcuts, no compromises</p>
+        </div>
+
+    </section>
+
+    <!-- Chef Spotlight -->
+    <section class="chef-section" id="about">
+        <div class="chef-header" data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-out-cubic">
+            <div class="menu-label">
+                <span class="menu-label-line"></span>
+                <span class="menu-label-text">✦ The Soul Behind The Smoke ✦</span>
+                <span class="menu-label-line"></span>
+            </div>
+            <h2 class="menu-title">One Hand On The Fire.<br><em>One Heart In The Past.</em></h2>
+        </div>
+        <div class="chef-glow"></div>
+
+        <div class="chef-container">
+            <div class="chef-image-wrap" data-aos="fade-right" data-aos-duration="1000">
+                <div class="chef-image">
+                    <img src="./images/chef1.png" alt="Chef Portrait">
+                </div>
+                <div class="chef-badge">
+                    <span class="chef-badge-number">15+</span>
+                    <span class="chef-badge-label">Years of Fire</span>
+                </div>
+            </div>
+
+            <div class="chef-info" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                <div class="menu-label">
+                    <span class="menu-label-line"></span>
+                    <span class="menu-label-text">✦ Meet The Flame Keeper ✦</span>
+                    <span class="menu-label-line"></span>
+                </div>
+
+                <h2 class="chef-title">Chef <em>Adaeze Obi</em></h2>
+
+                <p class="chef-quote">"Every dish I plate carries the smoke of my grandmother's kitchen — that's the
+                    story I refuse to let die."</p>
+
+                <p class="chef-desc">Trained across Lagos' finest kitchens before returning home to build Ember & Spice
+                    — a place where old family recipes meet open-flame technique, and every plate is a piece of memory
+                    served hot.</p>
+
+                <div class="chef-stats">
+                    <div class="chef-stat">
+                        <span class="chef-stat-number" data-count="15">0</span>
+                        <span class="chef-stat-plus">+</span>
+                        <span class="chef-stat-label">Years Experience</span>
+                    </div>
+                    <div class="chef-stat">
+                        <span class="chef-stat-number" data-count="40">0</span>
+                        <span class="chef-stat-plus">+</span>
+                        <span class="chef-stat-label">Signature Dishes</span>
+                    </div>
+                    <div class="chef-stat">
+                        <span class="chef-stat-number" data-count="6">0</span>
+                        <span class="chef-stat-plus"></span>
+                        <span class="chef-stat-label">Culinary Awards</span>
+                    </div>
+                </div>
+
+                <a href="#gallery" class="hero-btn hero-btn-secondary chef-cta">Our Story <span>→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section" id="testimonials">
+        <div class="testimonial-glow"></div>
+
+        <div class="testimonial-container">
+            <div class="testimonial-left" data-aos="fade-right" data-aos-duration="1200">
+                <span class="testimonial-pill">✦ Guests Trust Us</span>
+                <h2 class="testimonial-heading">What Lagos<br><em>Is Saying.</em></h2>
+
+                <div class="testimonial-dots" id="testimonial-dots"></div>
+            </div>
+
+            <div class="testimonial-right" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">
+                <div class="testimonial-card">
+                    <span class="testimonial-mark">"</span>
+
+                    <p class="testimonial-text" id="testimonial-text">Loading...</p>
+
+                    <div class="testimonial-rating" id="testimonial-rating"></div>
+
+                    <div class="testimonial-person">
+                        <img class="testimonial-avatar" id="testimonial-avatar" src="" alt="">
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name" id="testimonial-name">--</span>
+                            <span class="testimonial-role" id="testimonial-role">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation CTA -->
+    <section class="reserve-section" id="contact">
+        <div class="reserve-glow"></div>
+
+        <div class="reserve-container">
+            <div class="reserve-text" data-aos="fade-up" data-aos-duration="1200">
+                <div class="menu-label">
+                    <span class="menu-label-line"></span>
+                    <span class="menu-label-text">✦ Reserve Your Table ✦</span>
+                    <span class="menu-label-line"></span>
+                </div>
+                <h2 class="menu-title">Don't Just Dream About It.<br><em>Taste It.</em></h2>
+                <p class="reserve-sub">Book ahead and skip the wait — tables fill fast on weekends.</p>
+            </div>
+
+            <form class="reserve-form" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
+                <div class="reserve-row">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="reserve-row">
+                    <input type="date" required>
+                    <input type="number" placeholder="Guests" min="1" max="20" required>
+                </div>
+                <button type="submit" class="hero-btn hero-btn-primary reserve-submit">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-embers" id="footer-embers"></div>
+
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="./images/logo1.PNG" alt="Ember & Spice" class="footer-logo">
+                <p class="footer-tagline">Nigerian fine dining, crafted by fire and carried by story. Every plate is a
+                    piece of home, served hot.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M14 9V6.5c0-.83.67-1.5 1.5-1.5H17V2h-2.5A4.5 4.5 0 0 0 10 6.5V9H8v3h2v10h3V12h2.5l.5-3H13V9c0-.55.45-1 1-1z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M22 5.9c-.7.3-1.5.5-2.3.6.8-.5 1.5-1.3 1.8-2.3-.8.5-1.6.8-2.5 1a4 4 0 0 0-6.8 3.6A11.3 11.3 0 0 1 3.9 4.6a4 4 0 0 0 1.2 5.3c-.6 0-1.2-.2-1.7-.5v.1a4 4 0 0 0 3.2 3.9c-.6.1-1.2.2-1.8.1a4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.4a11.3 11.3 0 0 0 6.1 1.8c7.3 0 11.3-6 11.3-11.3v-.5c.8-.6 1.4-1.3 2-2.1l-.4-.4z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Reserve</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Visit Us</h4>
+                <p class="footer-info">14 Adeola Odeku Street<br>Victoria Island, Lagos</p>
+                <p class="footer-info">+234 813 583 6268</p>
+                <p class="footer-info">Open Daily · 11am – 11pm</p>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h4 class="footer-heading">Stay In The Loop</h4>
+                <p class="footer-info">Get first access to new menu drops and private events.</p>
+                <form class="footer-news-form" id="footer-news-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit" aria-label="Subscribe">→</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Ember & Spice. All rights reserved.</p>
+            <p>Crafted with fire, seasoned with soul.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>
