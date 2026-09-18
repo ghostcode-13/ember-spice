@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Events — Ember & Spice</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Josefin+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./images/logo1.PNG" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page-loader" id="page-loader">
+      <div class="loader-glow"></div>
+      <div class="loader-ring-wrap">
+        <svg class="loader-ring" viewBox="0 0 100 100">
+          <circle
+            cx="50"
+            cy="50"
+            r="46"
+            fill="none"
+            stroke="rgba(201,168,76,0.15)"
+            stroke-width="1.5"
+          />
+          <circle
+            cx="50"
+            cy="50"
+            r="46"
+            fill="none"
+            stroke="url(#loaderGradient)"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-dasharray="289"
+            stroke-dashoffset="220"
+          />
+          <defs>
+            <linearGradient
+              id="loaderGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" stop-color="#f1b15d" />
+              <stop offset="100%" stop-color="#c8691e" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <img src="./images/logo1.PNG" alt="" class="loader-logo" />
+      </div>
+      <span class="loader-label">Igniting The Flame</span>
+    </div>
+
+    <header>
+      <nav>
+        <a href="index.html"><img src="./images/logo1.PNG" alt="" /></a>
+        <div class="hamburger" id="hamburger">
+          <svg
+            class="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+          </svg>
+          <svg
+            class="close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+            ></path>
+          </svg>
+        </div>
+        <ul id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="events.html" class="active-link">Events</a></li>
+          <li><a href="orders.html">Orders</a></li>
+        </ul>
+        <a href="index.html#contact" class="reserve-btn">Book</a>
+      </nav>
+    </header>
+
+    <!-- Events Hero -->
+    <section class="events-hero">
+      <video class="events-hero-video" autoplay muted loop playsinline>
+        <source src="./images/event-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="events-hero-overlay"></div>
+      <div class="events-hero-glow"></div>
+      <div
+        class="events-hero-content"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+      >
+        <div class="menu-label">
+          <span class="menu-label-line"></span>
+          <span class="menu-label-text">✦ Private Events ✦</span>
+          <span class="menu-label-line"></span>
+        </div>
+        <h1 class="menu-title">
+          Every Fire Tells A Story.<br /><em>Yours Deserves One Too.</em>
+        </h1>
+        <p class="events-hero-sub">
+          From candlelit proposals to full-room takeovers — we don't just host
+          events, we build memories around a table.
+        </p>
+      </div>
+    </section>
+
+    <!-- Event Types -->
+    <section class="events-types">
+      <div class="events-grid">
+        <div
+          class="event-card"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out-cubic"
+          data-aos-once="true"
+        >
+          <img src="./images/wedding event.png" alt="Weddings & Engagements" />
+          <div class="event-overlay">
+            <span class="event-tag">Intimate</span>
+            <h3>Weddings & Engagements</h3>
+            <p>
+              A private setting for the night you'll tell your grandchildren
+              about — styled to match your story, lit by candle and flame.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="event-card"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out-cubic"
+          data-aos-delay="120"
+          data-aos-once="true"
+        >
+          <img
+            src="./images/birthday-celeb.jpeg"
+            alt="Birthdays & Milestones"
+          />
+          <div class="event-overlay">
+            <span class="event-tag">Celebration</span>
+            <h3>Birthdays & Milestones</h3>
+            <p>
+              The kind of room that makes people say "this is the best birthday
+              I've been to" before dessert even arrives.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="event-card"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out-cubic"
+          data-aos-delay="240"
+          data-aos-once="true"
+        >
+          <img
+            src="./images/Professionals.jpeg"
+            alt="Corporate & Group Dining"
+          />
+          <div class="event-overlay">
+            <span class="event-tag">Professional</span>
+            <h3>Corporate & Group Dining</h3>
+            <p>
+              Impress the client, reward the team, or close the deal — over a
+              table that does some of the talking for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="events-process">
+      <div class="events-header" data-aos="fade-up" data-aos-duration="1200">
+        <div class="menu-label">
+          <span class="menu-label-line"></span>
+          <span class="menu-label-text">✦ How It Works ✦</span>
+          <span class="menu-label-line"></span>
+        </div>
+        <h2 class="menu-title">Simple, From Spark <em>To Flame.</em></h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step" data-aos="fade-up" data-aos-duration="900">
+          <span class="process-number">01</span>
+          <h4>Tell Us Your Vision</h4>
+          <p>
+            Send us your date, guest count, and the feeling you're going for —
+            formal, festive, intimate, loud.
+          </p>
+        </div>
+        <div
+          class="process-step"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="120"
+        >
+          <span class="process-number">02</span>
+          <h4>We Craft The Experience</h4>
+          <p>
+            Menu, seating, lighting, and pacing — all built around your event,
+            not a generic package.
+          </p>
+        </div>
+        <div
+          class="process-step"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="240"
+        >
+          <span class="process-number">03</span>
+          <h4>You Just Show Up</h4>
+          <p>
+            We handle the fire. You handle the guest list. Show up and let the
+            night take care of itself.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section class="events-inquiry">
+      <div class="inquiry-glow"></div>
+      <div class="inquiry-container">
+        <div
+          class="inquiry-text"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="menu-label">
+            <span class="menu-label-line"></span>
+            <span class="menu-label-text">✦ Let's Plan It ✦</span>
+            <span class="menu-label-line"></span>
+          </div>
+          <h2 class="menu-title">Start With <em>A Message.</em></h2>
+          <p>
+            Fill this out and it goes straight to us on WhatsApp — no forms lost
+            in an inbox, no waiting days for a reply.
+          </p>
+        </div>
+
+        <form
+          class="inquiry-form"
+          id="inquiry-form"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="150"
+        >
+          <div class="reserve-row">
+            <input type="text" id="ev-name" placeholder="Full Name" required />
+            <input
+              type="tel"
+              id="ev-phone"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <div class="reserve-row">
+            <select id="ev-type" required>
+              <option value="" disabled selected>Event Type</option>
+              <option value="Wedding / Engagement">Wedding / Engagement</option>
+              <option value="Birthday / Milestone">Birthday / Milestone</option>
+              <option value="Corporate / Group Dining">
+                Corporate / Group Dining
+              </option>
+              <option value="Other">Other</option>
+            </select>
+            <input
+              type="number"
+              id="ev-guests"
+              placeholder="Guest Count"
+              min="1"
+              required
+            />
+          </div>
+          <input type="date" id="ev-date" required />
+          <textarea
+            id="ev-message"
+            placeholder="Tell us a bit about the event..."
+            rows="4"
+          ></textarea>
+          <button
+            type="submit"
+            class="hero-btn hero-btn-primary"
+            id="ev-submit"
+          >
+            Send Inquiry <span>→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-embers" id="footer-embers"></div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img
+            src="./images/logo1.PNG"
+            alt="Ember & Spice"
+            class="footer-logo"
+          />
+          <p class="footer-tagline">
+            Nigerian fine dining, crafted by fire and carried by story. Every
+            plate is a piece of home, served hot.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"
+              ><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"
+                  fill="currentColor"
+                /></svg
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M14 9V6.5c0-.83.67-1.5 1.5-1.5H17V2h-2.5A4.5 4.5 0 0 0 10 6.5V9H8v3h2v10h3V12h2.5l.5-3H13V9c0-.55.45-1 1-1z"
+                  fill="currentColor"
+                /></svg
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M22 5.9c-.7.3-1.5.5-2.3.6.8-.5 1.5-1.3 1.8-2.3-.8.5-1.6.8-2.5 1a4 4 0 0 0-6.8 3.6A11.3 11.3 0 0 1 3.9 4.6a4 4 0 0 0 1.2 5.3c-.6 0-1.2-.2-1.7-.5v.1a4 4 0 0 0 3.2 3.9c-.6.1-1.2.2-1.8.1a4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.4a11.3 11.3 0 0 0 6.1 1.8c7.3 0 11.3-6 11.3-11.3v-.5c.8-.6 1.4-1.3 2-2.1l-.4-.4z"
+                  fill="currentColor"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="index.html#contact">Reserve</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Visit Us</h4>
+          <p class="footer-info">
+            14 Adeola Odeku Street<br />Victoria Island, Lagos
+          </p>
+          <p class="footer-info">+234 813 583 6268</p>
+          <p class="footer-info">Open Daily · 11am – 11pm</p>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4 class="footer-heading">Stay In The Loop</h4>
+          <p class="footer-info">
+            Get first access to new menu drops and private events.
+          </p>
+          <form class="footer-news-form" id="footer-news-form">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit" aria-label="Subscribe">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Ember & Spice. All rights reserved.</p>
+        <p>Crafted with fire, seasoned with soul.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="java.js"></script>
+    <script src="events.js"></script>
+  </body>
+</html>
