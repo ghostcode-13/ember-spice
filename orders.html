@@ -1,195 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orders</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Josefin+Sans:wght@300;400&display=swap"
-        rel="stylesheet">
-        <link rel="icon" type="image/png" href="./images/logo1.PNG">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Josefin+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./images/logo1.PNG" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
-   <div class="page-loader" id="page-loader">
-    <div class="loader-glow"></div>
-    <div class="loader-ring-wrap">
+  <body>
+    <div class="page-loader" id="page-loader">
+      <div class="loader-glow"></div>
+      <div class="loader-ring-wrap">
         <svg class="loader-ring" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(201,168,76,0.15)" stroke-width="1.5"/>
-            <circle cx="50" cy="50" r="46" fill="none" stroke="url(#loaderGradient)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="220"/>
-            <defs>
-                <linearGradient id="loaderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#f1b15d"/>
-                    <stop offset="100%" stop-color="#c8691e"/>
-                </linearGradient>
-            </defs>
+          <circle
+            cx="50"
+            cy="50"
+            r="46"
+            fill="none"
+            stroke="rgba(201,168,76,0.15)"
+            stroke-width="1.5"
+          />
+          <circle
+            cx="50"
+            cy="50"
+            r="46"
+            fill="none"
+            stroke="url(#loaderGradient)"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-dasharray="289"
+            stroke-dashoffset="220"
+          />
+          <defs>
+            <linearGradient
+              id="loaderGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" stop-color="#f1b15d" />
+              <stop offset="100%" stop-color="#c8691e" />
+            </linearGradient>
+          </defs>
         </svg>
-        <img src="./images/logo1.PNG" alt="" class="loader-logo">
+        <img src="./images/logo1.PNG" alt="" class="loader-logo" />
+      </div>
+      <span class="loader-label">Igniting The Flame</span>
     </div>
-    <span class="loader-label">Igniting The Flame</span>
-</div>
 
     <header>
-        <nav>
-            <a href="">
-                <img src="./images/logo1.PNG" alt="">
-            </a>
-            <div class="hamburger" id="hamburger">
-                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
-                </svg>
+      <nav>
+        <a href="">
+          <img src="./images/logo1.PNG" alt="" />
+        </a>
+        <div class="hamburger" id="hamburger">
+          <svg
+            class="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+          </svg>
 
-                <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
-                    </path>
-                </svg>
-            </div>
+          <svg
+            class="close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+            ></path>
+          </svg>
+        </div>
 
-            <ul id="nav-menu">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#menu">Menu</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <li><a href="orders.html">Orders</a></li>
-            </ul>
-            <a href="index.html#contact" class="reserve-btn">Book</a>
-        </nav>
+        <ul id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="orders.html" class="active-link">Orders</a></li>
+        </ul>
+        >
+        <a href="index.html#contact" class="reserve-btn">Book</a>
+      </nav>
     </header>
 
     <!-- Orders Hero -->
     <section class="orders-hero">
-        <div class="orders-hero-glow"></div>
-        <div class="orders-hero-content" data-aos="fade-up" data-aos-duration="1000">
-            <div class="menu-label">
-                <span class="menu-label-line"></span>
-                <span class="menu-label-text">✦ Order Online ✦</span>
-                <span class="menu-label-line"></span>
-            </div>
-            <h1 class="menu-title">Hungry? <em>Let's Fix That.</em></h1>
-            <p class="orders-hero-sub">Pick your dishes, we'll do the rest — your order goes straight to WhatsApp, ready
-                to confirm in seconds.</p>
+      <div class="orders-hero-glow"></div>
+      <div
+        class="orders-hero-content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="menu-label">
+          <span class="menu-label-line"></span>
+          <span class="menu-label-text">✦ Order Online ✦</span>
+          <span class="menu-label-line"></span>
         </div>
+        <h1 class="menu-title">Hungry? <em>Let's Fix That.</em></h1>
+        <p class="orders-hero-sub">
+          Pick your dishes, we'll do the rest — your order goes straight to
+          WhatsApp, ready to confirm in seconds.
+        </p>
+      </div>
     </section>
 
     <!-- Order Builder -->
     <section class="order-builder">
-        <div class="order-items" id="order-items">
-            <!-- Filled by JS -->
-        </div>
+      <div class="order-items" id="order-items">
+        <!-- Filled by JS -->
+      </div>
 
-        <aside class="order-summary" id="order-summary">
-            <h3 class="summary-title">Your Order</h3>
-            <div class="summary-list" id="summary-list">
-                <p class="summary-empty">No items yet — add a dish to get started.</p>
-            </div>
-            <div class="summary-total">
-                <span>Total</span>
-                <span id="summary-total-amount">₦0</span>
-            </div>
-            <button class="hero-btn hero-btn-primary summary-whatsapp" id="send-whatsapp">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-                    style="margin-right:8px;vertical-align:-3px;">
-                    <path
-                        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm0 18.1h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.24 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23a7.5 7.5 0 0 1-1.38-1.72c-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.06 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.16-.48-.28z" />
-                </svg>
-                Send Order via WhatsApp
-            </button>
-        </aside>
+      <aside class="order-summary" id="order-summary">
+        <h3 class="summary-title">Your Order</h3>
+        <div class="summary-list" id="summary-list">
+          <p class="summary-empty">No items yet — add a dish to get started.</p>
+        </div>
+        <div class="summary-total">
+          <span>Total</span>
+          <span id="summary-total-amount">₦0</span>
+        </div>
+        <button
+          class="hero-btn hero-btn-primary summary-whatsapp"
+          id="send-whatsapp"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            style="margin-right: 8px; vertical-align: -3px"
+          >
+            <path
+              d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm0 18.1h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.24 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23a7.5 7.5 0 0 1-1.38-1.72c-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.06 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.16-.48-.28z"
+            />
+          </svg>
+          Send Order via WhatsApp
+        </button>
+      </aside>
     </section>
 
     <!-- Quick Contact Card -->
     <section class="quick-contact">
-        <div class="quick-contact-card" data-aos="fade-up">
-            <div class="qc-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm0 18.1h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.24 8.21z" />
-                </svg>
-            </div>
-            <div>
-                <h4>Prefer to just chat?</h4>
-                <p>Message us directly on WhatsApp for custom orders, large groups, or quick questions.</p>
-            </div>
-            <a href="https://api.whatsapp.com/send?phone=2348135836268" class="hero-btn hero-btn-secondary"
-                target="_blank">Chat On WhatsApp</a>
+      <div class="quick-contact-card" data-aos="fade-up">
+        <div class="qc-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm0 18.1h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.24 8.21z"
+            />
+          </svg>
         </div>
+        <div>
+          <h4>Prefer to just chat?</h4>
+          <p>
+            Message us directly on WhatsApp for custom orders, large groups, or
+            quick questions.
+          </p>
+        </div>
+        <a
+          href="https://api.whatsapp.com/send?phone=2348135836268"
+          class="hero-btn hero-btn-secondary"
+          target="_blank"
+          >Chat On WhatsApp</a
+        >
+      </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-embers" id="footer-embers"></div>
+      <div class="footer-embers" id="footer-embers"></div>
 
-        <div class="footer-top">
-            <div class="footer-brand">
-                <img src="./images/logo1.PNG" alt="Ember & Spice" class="footer-logo">
-                <p class="footer-tagline">Nigerian fine dining, crafted by fire and carried by story. Every plate is a
-                    piece of home, served hot.</p>
-                <div class="footer-social">
-                    <a href="#" aria-label="Instagram">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Facebook">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M14 9V6.5c0-.83.67-1.5 1.5-1.5H17V2h-2.5A4.5 4.5 0 0 0 10 6.5V9H8v3h2v10h3V12h2.5l.5-3H13V9c0-.55.45-1 1-1z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Twitter">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M22 5.9c-.7.3-1.5.5-2.3.6.8-.5 1.5-1.3 1.8-2.3-.8.5-1.6.8-2.5 1a4 4 0 0 0-6.8 3.6A11.3 11.3 0 0 1 3.9 4.6a4 4 0 0 0 1.2 5.3c-.6 0-1.2-.2-1.7-.5v.1a4 4 0 0 0 3.2 3.9c-.6.1-1.2.2-1.8.1a4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.4a11.3 11.3 0 0 0 6.1 1.8c7.3 0 11.3-6 11.3-11.3v-.5c.8-.6 1.4-1.3 2-2.1l-.4-.4z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <h4 class="footer-heading">Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#menu">Menu</a></li>
-                    <li><a href="index.html#testimonials">Reviews</a></li>
-                    <li><a href="index.html#contact">Reserve</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4 class="footer-heading">Visit Us</h4>
-                <p class="footer-info">14 Adeola Odeku Street<br>Victoria Island, Lagos</p>
-                <p class="footer-info">+234 813 583 6268</p>
-                <p class="footer-info">Open Daily · 11am – 11pm</p>
-            </div>
-
-            <div class="footer-col footer-newsletter">
-                <h4 class="footer-heading">Stay In The Loop</h4>
-                <p class="footer-info">Get first access to new menu drops and private events.</p>
-                <form class="footer-news-form" id="footer-news-form">
-                    <input type="email" placeholder="Your email" required>
-                    <button type="submit" aria-label="Subscribe">→</button>
-                </form>
-            </div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img
+            src="./images/logo1.PNG"
+            alt="Ember & Spice"
+            class="footer-logo"
+          />
+          <p class="footer-tagline">
+            Nigerian fine dining, crafted by fire and carried by story. Every
+            plate is a piece of home, served hot.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M14 9V6.5c0-.83.67-1.5 1.5-1.5H17V2h-2.5A4.5 4.5 0 0 0 10 6.5V9H8v3h2v10h3V12h2.5l.5-3H13V9c0-.55.45-1 1-1z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M22 5.9c-.7.3-1.5.5-2.3.6.8-.5 1.5-1.3 1.8-2.3-.8.5-1.6.8-2.5 1a4 4 0 0 0-6.8 3.6A11.3 11.3 0 0 1 3.9 4.6a4 4 0 0 0 1.2 5.3c-.6 0-1.2-.2-1.7-.5v.1a4 4 0 0 0 3.2 3.9c-.6.1-1.2.2-1.8.1a4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.4a11.3 11.3 0 0 0 6.1 1.8c7.3 0 11.3-6 11.3-11.3v-.5c.8-.6 1.4-1.3 2-2.1l-.4-.4z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2025 Ember & Spice. All rights reserved.</p>
-            <p>Crafted with fire, seasoned with soul.</p>
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#testimonials">Reviews</a></li>
+            <li><a href="index.html#contact">Reserve</a></li>
+          </ul>
         </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Visit Us</h4>
+          <p class="footer-info">
+            14 Adeola Odeku Street<br />Victoria Island, Lagos
+          </p>
+          <p class="footer-info">+234 813 583 6268</p>
+          <p class="footer-info">Open Daily · 11am – 11pm</p>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4 class="footer-heading">Stay In The Loop</h4>
+          <p class="footer-info">
+            Get first access to new menu drops and private events.
+          </p>
+          <form class="footer-news-form" id="footer-news-form">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit" aria-label="Subscribe">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Ember & Spice. All rights reserved.</p>
+        <p>Crafted with fire, seasoned with soul.</p>
+      </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="java.js"></script>
     <script src="orders.js"></script>
-
-</body>
+  </body>
+</html>
